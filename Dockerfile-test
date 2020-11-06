@@ -1,0 +1,12 @@
+FROM python:3.6
+
+RUN pip install pipenv
+
+COPY Pipfile /siab/Pipfile
+COPY Pipfile.lock /siab/Pipfile.lock
+WORKDIR /siab
+RUN pipenv sync --dev
+
+COPY . /siab
+
+CMD pipenv run pytest

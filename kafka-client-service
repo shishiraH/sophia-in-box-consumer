@@ -1,0 +1,900 @@
+Attaching to sophia-in-a-box-master_control-center_1, sophia-in-a-box-master_kafka-client-service_1, kafka-setup, sophia-in-a-box-master_connect_1, sophia-in-a-box-master_schema-registry_1, sophia-in-a-box-master_lts-api_1, sophia-in-a-box-master_broker_1, sophia-in-a-box-master_zookeeper_1, sophia-in-a-box-master_localstack_1
+[34mkafka-client-service_1  |[0m %7|1604640474.212|MEMBERID|giang_test#consumer-1| [thrd:app]: Group "rangingtool_ipm_consumer_grp_dev": updating member id "(not-set)" -> ""
+[34mkafka-client-service_1  |[0m %7|1604640474.217|WAKEUPFD|giang_test#consumer-1| [thrd:app]: GroupCoordinator: Enabled low-latency ops queue wake-ups
+[34mkafka-client-service_1  |[0m %7|1604640474.217|BROKER|giang_test#consumer-1| [thrd:app]: GroupCoordinator: Added new broker with NodeId -1
+[34mkafka-client-service_1  |[0m %7|1604640474.218|BRKMAIN|giang_test#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Enter main broker thread
+[34mkafka-client-service_1  |[0m %7|1604640474.218|WAKEUPFD|giang_test#consumer-1| [thrd:app]: broker:9092/bootstrap: Enabled low-latency ops queue wake-ups
+[34mkafka-client-service_1  |[0m %7|1604640474.218|BROKER|giang_test#consumer-1| [thrd:app]: broker:9092/bootstrap: Added new broker with NodeId -1
+[34mkafka-client-service_1  |[0m %7|1604640474.218|BRKMAIN|giang_test#consumer-1| [thrd::0/internal]: :0/internal: Enter main broker thread
+[34mkafka-client-service_1  |[0m %7|1604640474.219|INIT|giang_test#consumer-1| [thrd:app]: librdkafka v1.5.0 (0x10500ff) giang_test#consumer-1 initialized (builtin.features gzip,snappy,ssl,sasl,regex,lz4,sasl_plain,sasl_scram,plugins,zstd,sasl_oauthbearer, STATIC_LINKING GCC GXX PKGCONFIG INSTALL GNULD LDS LIBDL PLUGINS STATIC_LIB_zlib ZLIB STATIC_LIB_libcrypto STATIC_LIB_libssl SSL STATIC_LIB_libzstd ZSTD HDRHISTOGRAM SYSLOG SNAPPY SOCKEM SASL_SCRAM SASL_OAUTHBEARER CRC32C_HW, debug 0xfffff)
+[34mkafka-client-service_1  |[0m %7|1604640474.219|BRKMAIN|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Enter main broker thread
+[34mkafka-client-service_1  |[0m %7|1604640474.219|CGRPOP|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev" received op SUBSCRIBE (v0) in state init (join state init, v1 vs 0)
+[34mkafka-client-service_1  |[0m %7|1604640474.220|SUBSCRIBE|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": subscribe to new subscription of 1 topics (join state init)
+[34mkafka-client-service_1  |[0m %7|1604640474.220|UNSUBSCRIBE|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": unsubscribe from current unset subscription of 0 topics (leave group=no, join state init, v1)
+[34mkafka-client-service_1  |[0m %7|1604640474.220|GRPLEADER|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": resetting group leader info: unsubscribe
+[34mkafka-client-service_1  |[0m %7|1604640474.220|REBALANCE|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev" is rebalancing in state init (join-state init) without assignment: unsubscribe
+[34mkafka-client-service_1  |[0m %7|1604640474.220|CGRPJOINSTATE|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev" changed join state init -> wait-unassign (v1, state init)
+[34mkafka-client-service_1  |[0m %7|1604640474.220|UNASSIGN|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": unassign done in state init (join state wait-unassign): without new assignment: unassign (no previous assignment)
+[34mkafka-client-service_1  |[0m %7|1604640474.220|CGRPJOINSTATE|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev" changed join state wait-unassign -> init (v1, state init)
+[34mkafka-client-service_1  |[0m %7|1604640474.220|CGRPSTATE|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev" changed state init -> query-coord (v1, join-state init)
+[34mkafka-client-service_1  |[0m %7|1604640474.220|BROADCAST|giang_test#consumer-1| [thrd:main]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640474.220|CONNECT|giang_test#consumer-1| [thrd:main]: broker:9092/bootstrap: Selected for cluster connection: coordinator query (broker has 0 connection attempt(s))
+[34mkafka-client-service_1  |[0m %7|1604640474.220|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640474.221|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Received CONNECT op
+[34mkafka-client-service_1  |[0m %7|1604640474.221|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state INIT -> TRY_CONNECT
+[34mkafka-client-service_1  |[0m %7|1604640474.221|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640474.221|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: broker in state TRY_CONNECT connecting
+[34mkafka-client-service_1  |[0m %7|1604640474.221|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state TRY_CONNECT -> CONNECT
+[34mkafka-client-service_1  |[0m %7|1604640474.221|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640474.223|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connecting to ipv4#192.168.144.4:9092 (plaintext) with socket 9
+[34mkafka-client-service_1  |[0m %7|1604640474.224|FAIL|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connect to ipv4#192.168.144.4:9092 failed: Connection refused (after 2ms in state CONNECT) (_TRANSPORT)
+[34mkafka-client-service_1  |[0m %3|1604640474.224|FAIL|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connect to ipv4#192.168.144.4:9092 failed: Connection refused (after 2ms in state CONNECT)
+[34mkafka-client-service_1  |[0m %7|1604640474.224|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state CONNECT -> DOWN
+[34mkafka-client-service_1  |[0m %7|1604640474.224|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640474.224|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Purging bufq with 0 buffers
+[34mkafka-client-service_1  |[0m %7|1604640474.225|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Purging bufq with 0 buffers
+[34mkafka-client-service_1  |[0m %7|1604640474.225|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Updating 0 buffers on connection reset
+[34mkafka-client-service_1  |[0m %7|1604640474.225|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state DOWN -> INIT
+[34mkafka-client-service_1  |[0m %7|1604640474.225|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640475.218|CONNECT|giang_test#consumer-1| [thrd:main]: broker:9092/bootstrap: Selected for cluster connection: coordinator query (broker has 1 connection attempt(s))
+[34mkafka-client-service_1  |[0m %7|1604640475.218|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640475.218|CONNECT|giang_test#consumer-1| [thrd:main]: Not selecting any broker for cluster connection: still suppressed for 49ms: coordinator query
+[34mkafka-client-service_1  |[0m %7|1604640475.218|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640475.218|CONNECT|giang_test#consumer-1| [thrd:main]: Not selecting any broker for cluster connection: still suppressed for 49ms: coordinator query
+[34mkafka-client-service_1  |[0m %7|1604640475.218|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640475.218|CONNECT|giang_test#consumer-1| [thrd:main]: Not selecting any broker for cluster connection: still suppressed for 49ms: no cluster connection
+[34mkafka-client-service_1  |[0m %7|1604640475.218|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Received CONNECT op
+[34mkafka-client-service_1  |[0m %7|1604640475.219|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state INIT -> TRY_CONNECT
+[34mkafka-client-service_1  |[0m %7|1604640475.219|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640475.219|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: broker in state TRY_CONNECT connecting
+[34mkafka-client-service_1  |[0m %7|1604640475.219|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state TRY_CONNECT -> CONNECT
+[34mkafka-client-service_1  |[0m %7|1604640475.219|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640475.219|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connecting to ipv4#192.168.144.4:9092 (plaintext) with socket 9
+[34mkafka-client-service_1  |[0m %7|1604640475.220|FAIL|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connect to ipv4#192.168.144.4:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed) (_TRANSPORT): identical to last error
+[34mkafka-client-service_1  |[0m %3|1604640475.220|FAIL|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connect to ipv4#192.168.144.4:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+[34mkafka-client-service_1  |[0m %7|1604640475.220|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state CONNECT -> DOWN
+[34mkafka-client-service_1  |[0m %7|1604640475.220|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640475.221|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Purging bufq with 0 buffers
+[34mkafka-client-service_1  |[0m %7|1604640475.221|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Purging bufq with 0 buffers
+[34mkafka-client-service_1  |[0m %7|1604640475.221|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Updating 0 buffers on connection reset
+[34mkafka-client-service_1  |[0m %7|1604640475.221|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state DOWN -> INIT
+[34mkafka-client-service_1  |[0m %7|1604640475.221|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640476.218|CONNECT|giang_test#consumer-1| [thrd:main]: broker:9092/bootstrap: Selected for cluster connection: coordinator query (broker has 2 connection attempt(s))
+[34mkafka-client-service_1  |[0m %7|1604640476.218|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640476.218|CONNECT|giang_test#consumer-1| [thrd:main]: Not selecting any broker for cluster connection: still suppressed for 49ms: coordinator query
+[34mkafka-client-service_1  |[0m %7|1604640476.218|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640476.218|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Received CONNECT op
+[34mkafka-client-service_1  |[0m %7|1604640476.218|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state INIT -> TRY_CONNECT
+[34mkafka-client-service_1  |[0m %7|1604640476.218|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640476.218|CONNECT|giang_test#consumer-1| [thrd:main]: Not selecting any broker for cluster connection: still suppressed for 49ms: coordinator query
+[34mkafka-client-service_1  |[0m %7|1604640476.218|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640476.218|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: broker in state TRY_CONNECT connecting
+[34mkafka-client-service_1  |[0m %7|1604640476.218|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state TRY_CONNECT -> CONNECT
+[34mkafka-client-service_1  |[0m %7|1604640476.219|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640476.218|CONNECT|giang_test#consumer-1| [thrd:main]: Not selecting any broker for cluster connection: still suppressed for 49ms: no cluster connection
+[34mkafka-client-service_1  |[0m %7|1604640476.220|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connecting to ipv4#192.168.144.4:9092 (plaintext) with socket 9
+[34mkafka-client-service_1  |[0m %7|1604640476.220|FAIL|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connect to ipv4#192.168.144.4:9092 failed: Connection refused (after 1ms in state CONNECT) (_TRANSPORT): identical to last error: error log suppressed
+[34mkafka-client-service_1  |[0m %7|1604640476.220|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state CONNECT -> DOWN
+[34mkafka-client-service_1  |[0m %7|1604640476.220|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640476.220|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Purging bufq with 0 buffers
+[34mkafka-client-service_1  |[0m %7|1604640476.220|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Purging bufq with 0 buffers
+[34mkafka-client-service_1  |[0m %7|1604640476.220|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Updating 0 buffers on connection reset
+[34mkafka-client-service_1  |[0m %7|1604640476.221|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state DOWN -> INIT
+[34mkafka-client-service_1  |[0m %7|1604640476.221|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640477.218|CONNECT|giang_test#consumer-1| [thrd:main]: broker:9092/bootstrap: Selected for cluster connection: coordinator query (broker has 3 connection attempt(s))
+[34mkafka-client-service_1  |[0m %7|1604640477.218|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640477.218|CONNECT|giang_test#consumer-1| [thrd:main]: Not selecting any broker for cluster connection: still suppressed for 49ms: coordinator query
+[34mkafka-client-service_1  |[0m %7|1604640477.218|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Received CONNECT op
+[34mkafka-client-service_1  |[0m %7|1604640477.219|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state INIT -> TRY_CONNECT
+[34mkafka-client-service_1  |[0m %7|1604640477.219|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640477.219|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640477.219|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: broker in state TRY_CONNECT connecting
+[34mkafka-client-service_1  |[0m %7|1604640477.219|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state TRY_CONNECT -> CONNECT
+[34mkafka-client-service_1  |[0m %7|1604640477.219|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640477.219|CONNECT|giang_test#consumer-1| [thrd:main]: Not selecting any broker for cluster connection: still suppressed for 48ms: coordinator query
+[34mkafka-client-service_1  |[0m %7|1604640477.219|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640477.220|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connecting to ipv4#192.168.144.4:9092 (plaintext) with socket 9
+[34mkafka-client-service_1  |[0m %7|1604640477.220|CONNECT|giang_test#consumer-1| [thrd:main]: Not selecting any broker for cluster connection: still suppressed for 48ms: no cluster connection
+[34mkafka-client-service_1  |[0m %7|1604640477.220|FAIL|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connect to ipv4#192.168.144.4:9092 failed: Connection refused (after 0ms in state CONNECT) (_TRANSPORT): identical to last error: error log suppressed
+[34mkafka-client-service_1  |[0m %7|1604640477.220|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state CONNECT -> DOWN
+[34mkafka-client-service_1  |[0m %7|1604640477.220|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640477.220|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Purging bufq with 0 buffers
+[34mkafka-client-service_1  |[0m %7|1604640477.220|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Purging bufq with 0 buffers
+[34mkafka-client-service_1  |[0m %7|1604640477.220|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Updating 0 buffers on connection reset
+[34mkafka-client-service_1  |[0m %7|1604640477.221|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state DOWN -> INIT
+[34mkafka-client-service_1  |[0m %7|1604640477.221|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640478.219|CONNECT|giang_test#consumer-1| [thrd:main]: broker:9092/bootstrap: Selected for cluster connection: coordinator query (broker has 4 connection attempt(s))
+[34mkafka-client-service_1  |[0m %7|1604640478.219|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640478.219|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Received CONNECT op
+[34mkafka-client-service_1  |[0m %7|1604640478.219|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state INIT -> TRY_CONNECT
+[34mkafka-client-service_1  |[0m %7|1604640478.219|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640478.219|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: broker in state TRY_CONNECT connecting
+[34mkafka-client-service_1  |[0m %7|1604640478.219|CONNECT|giang_test#consumer-1| [thrd:main]: Not selecting any broker for cluster connection: still suppressed for 49ms: coordinator query
+[34mkafka-client-service_1  |[0m %7|1604640478.220|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640478.220|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state TRY_CONNECT -> CONNECT
+[34mkafka-client-service_1  |[0m %7|1604640478.220|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640478.220|CONNECT|giang_test#consumer-1| [thrd:main]: Not selecting any broker for cluster connection: still suppressed for 49ms: no cluster connection
+[34mkafka-client-service_1  |[0m %7|1604640478.221|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connecting to ipv4#192.168.144.4:9092 (plaintext) with socket 9
+[34mkafka-client-service_1  |[0m %7|1604640478.221|FAIL|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connect to ipv4#192.168.144.4:9092 failed: Connection refused (after 1ms in state CONNECT) (_TRANSPORT): identical to last error: error log suppressed
+[34mkafka-client-service_1  |[0m %7|1604640478.221|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state CONNECT -> DOWN
+[34mkafka-client-service_1  |[0m %7|1604640478.221|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640478.222|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Purging bufq with 0 buffers
+[34mkafka-client-service_1  |[0m %7|1604640478.222|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Purging bufq with 0 buffers
+[34mkafka-client-service_1  |[0m %7|1604640478.222|BUFQ|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Updating 0 buffers on connection reset
+[34mkafka-client-service_1  |[0m %7|1604640478.222|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state DOWN -> INIT
+[34mkafka-client-service_1  |[0m %7|1604640478.222|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640479.217|CONNECT|giang_test#consumer-1| [thrd:main]: broker:9092/bootstrap: Selected for cluster connection: coordinator query (broker has 5 connection attempt(s))
+[34mkafka-client-service_1  |[0m %7|1604640479.217|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640479.218|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Received CONNECT op
+[34mkafka-client-service_1  |[0m %7|1604640479.217|CONNECT|giang_test#consumer-1| [thrd:main]: Not selecting any broker for cluster connection: still suppressed for 49ms: coordinator query
+[34mkafka-client-service_1  |[0m %7|1604640479.218|CGRPQUERY|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": no broker available for coordinator query: intervaled in state query-coord
+[34mkafka-client-service_1  |[0m %7|1604640479.218|COMMIT|giang_test#consumer-1| [thrd:main]: OffsetCommit for -1 partition(s): cgrp auto commit timer: returned: Local: No offset stored
+[34mkafka-client-service_1  |[0m %7|1604640479.218|UNASSIGN|giang_test#consumer-1| [thrd:main]: Group "rangingtool_ipm_consumer_grp_dev": unassign done in state query-coord (join state init): without new assignment: OffsetCommit done (__NO_OFFSET)
+[34mkafka-client-service_1  |[0m %7|1604640479.218|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state INIT -> TRY_CONNECT
+[34mkafka-client-service_1  |[0m %7|1604640479.218|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640479.218|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: broker in state TRY_CONNECT connecting
+[34mkafka-client-service_1  |[0m %7|1604640479.218|STATE|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Broker changed state TRY_CONNECT -> CONNECT
+[34mkafka-client-service_1  |[0m %7|1604640479.218|BROADCAST|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: Broadcasting state change
+[34mkafka-client-service_1  |[0m %7|1604640479.218|CONNECT|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connecting to ipv4#192.168.144.4:9092 (plaintext) with socket 9
+[34mkafka-client-service_1  |[0m %7|1604640479.218|FAIL|giang_test#consumer-1| [thrd:broker:9092/bootstrap]: broker:9092/bootstrap: Connect to ipv4#192.168.144.4:9092 failed: Connection refused (after 0ms in state CONNECT) (_TRANSPORT): identical to last error: error log suppressed
+[35mcontrol-center_1        |[0m ===> ENV Variables ...
+[35mcontrol-center_1        |[0m ALLOW_UNSIGNED=false
+[35mcontrol-center_1        |[0m COMPONENT=control-center
+[35mcontrol-center_1        |[0m CONFLUENT_DEB_VERSION=1
+[35mcontrol-center_1        |[0m CONFLUENT_MAJOR_VERSION=5
+[35mcontrol-center_1        |[0m CONFLUENT_METRICS_TOPIC_REPLICATION=1
+[35mcontrol-center_1        |[0m CONFLUENT_MINOR_VERSION=1
+[35mcontrol-center_1        |[0m CONFLUENT_MVN_LABEL=
+[35mcontrol-center_1        |[0m CONFLUENT_PATCH_VERSION=0
+[35mcontrol-center_1        |[0m CONFLUENT_PLATFORM_LABEL=
+[35mcontrol-center_1        |[0m CONFLUENT_VERSION=5.1.0
+[35mcontrol-center_1        |[0m CONTROL_CENTER_BOOTSTRAP_SERVERS=broker:9092
+[35mcontrol-center_1        |[0m CONTROL_CENTER_CONFIG_DIR=/etc/confluent-control-center
+[35mcontrol-center_1        |[0m CONTROL_CENTER_CONNECT_CLUSTER=connect-source:8091
+[35mcontrol-center_1        |[0m CONTROL_CENTER_DATA_DIR=/var/lib/confluent-control-center
+[35mcontrol-center_1        |[0m CONTROL_CENTER_INTERNAL_TOPICS_PARTITIONS=1
+[35mcontrol-center_1        |[0m CONTROL_CENTER_KSQL_ADVERTISED_URL=http://localhost:8088
+[35mcontrol-center_1        |[0m CONTROL_CENTER_KSQL_URL=http://ksql-server:8088
+[35mcontrol-center_1        |[0m CONTROL_CENTER_MONITORING_INTERCEPTOR_TOPIC_PARTITIONS=1
+[35mcontrol-center_1        |[0m CONTROL_CENTER_REPLICATION_FACTOR=1
+[35mcontrol-center_1        |[0m CONTROL_CENTER_ZOOKEEPER_CONNECT=zookeeper:2181
+[35mcontrol-center_1        |[0m CUB_CLASSPATH=/etc/confluent/docker/docker-utils.jar
+[35mcontrol-center_1        |[0m HOME=/root
+[35mcontrol-center_1        |[0m HOSTNAME=control-center
+[35mcontrol-center_1        |[0m KAFKA_VERSION=2.1.0
+[35mcontrol-center_1        |[0m LANG=C.UTF-8
+[35mcontrol-center_1        |[0m PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+[35mcontrol-center_1        |[0m PORT=9021
+[35mcontrol-center_1        |[0m PWD=/
+[35mcontrol-center_1        |[0m PYTHON_PIP_VERSION=8.1.2
+[35mcontrol-center_1        |[0m PYTHON_VERSION=2.7.9-1
+[35mcontrol-center_1        |[0m SCALA_VERSION=2.11
+[35mcontrol-center_1        |[0m SHLVL=1
+[35mcontrol-center_1        |[0m ZULU_OPENJDK_VERSION=8=8.30.0.1
+[35mcontrol-center_1        |[0m _=/usr/bin/env
+[35mcontrol-center_1        |[0m ===> User
+[35mcontrol-center_1        |[0m uid=0(root) gid=0(root) groups=0(root)
+[35mcontrol-center_1        |[0m ===> Configuring ...
+[35mcontrol-center_1        |[0m ===> Check if /etc/confluent-control-center is writable ...
+[35mcontrol-center_1        |[0m ===> Check if /var/lib/confluent-control-center is writable ...
+[35mcontrol-center_1        |[0m ===> Running preflight checks ... 
+[35mcontrol-center_1        |[0m ===> Check if Kafka is healthy ...
+[35mcontrol-center_1        |[0m [main] INFO org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+[35mcontrol-center_1        |[0m 	bootstrap.servers = [broker:9092]
+[35mcontrol-center_1        |[0m 	client.dns.lookup = default
+[35mcontrol-center_1        |[0m 	client.id = 
+[35mcontrol-center_1        |[0m 	connections.max.idle.ms = 300000
+[35mcontrol-center_1        |[0m 	metadata.max.age.ms = 300000
+[35mcontrol-center_1        |[0m 	metric.reporters = []
+[35mcontrol-center_1        |[0m 	metrics.num.samples = 2
+[35mcontrol-center_1        |[0m 	metrics.recording.level = INFO
+[35mcontrol-center_1        |[0m 	metrics.sample.window.ms = 30000
+[35mcontrol-center_1        |[0m 	receive.buffer.bytes = 65536
+[35mcontrol-center_1        |[0m 	reconnect.backoff.max.ms = 1000
+[35mcontrol-center_1        |[0m 	reconnect.backoff.ms = 50
+[35mcontrol-center_1        |[0m 	request.timeout.ms = 120000
+[35mcontrol-center_1        |[0m 	retries = 5
+[35mcontrol-center_1        |[0m 	retry.backoff.ms = 100
+[35mcontrol-center_1        |[0m 	sasl.client.callback.handler.class = null
+[35mcontrol-center_1        |[0m 	sasl.jaas.config = null
+[35mcontrol-center_1        |[0m 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[35mcontrol-center_1        |[0m 	sasl.kerberos.min.time.before.relogin = 60000
+[35mcontrol-center_1        |[0m 	sasl.kerberos.service.name = null
+[35mcontrol-center_1        |[0m 	sasl.kerberos.ticket.renew.jitter = 0.05
+[35mcontrol-center_1        |[0m 	sasl.kerberos.ticket.renew.window.factor = 0.8
+[35mcontrol-center_1        |[0m 	sasl.login.callback.handler.class = null
+[35mcontrol-center_1        |[0m 	sasl.login.class = null
+[35mcontrol-center_1        |[0m 	sasl.login.refresh.buffer.seconds = 300
+[35mcontrol-center_1        |[0m 	sasl.login.refresh.min.period.seconds = 60
+[35mcontrol-center_1        |[0m 	sasl.login.refresh.window.factor = 0.8
+[35mcontrol-center_1        |[0m 	sasl.login.refresh.window.jitter = 0.05
+[35mcontrol-center_1        |[0m 	sasl.mechanism = GSSAPI
+[35mcontrol-center_1        |[0m 	security.protocol = PLAINTEXT
+[35mcontrol-center_1        |[0m 	send.buffer.bytes = 131072
+[35mcontrol-center_1        |[0m 	ssl.cipher.suites = null
+[35mcontrol-center_1        |[0m 	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+[35mcontrol-center_1        |[0m 	ssl.endpoint.identification.algorithm = https
+[35mcontrol-center_1        |[0m 	ssl.key.password = null
+[35mcontrol-center_1        |[0m 	ssl.keymanager.algorithm = SunX509
+[35mcontrol-center_1        |[0m 	ssl.keystore.location = null
+[35mcontrol-center_1        |[0m 	ssl.keystore.password = null
+[35mcontrol-center_1        |[0m 	ssl.keystore.type = JKS
+[35mcontrol-center_1        |[0m 	ssl.protocol = TLS
+[35mcontrol-center_1        |[0m 	ssl.provider = null
+[35mcontrol-center_1        |[0m 	ssl.secure.random.implementation = null
+[35mcontrol-center_1        |[0m 	ssl.trustmanager.algorithm = PKIX
+[35mcontrol-center_1        |[0m 	ssl.truststore.location = null
+[35mcontrol-center_1        |[0m 	ssl.truststore.password = null
+[35mcontrol-center_1        |[0m 	ssl.truststore.type = JKS
+[35mcontrol-center_1        |[0m 
+[35mcontrol-center_1        |[0m [main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.1.0-cp1
+[35mcontrol-center_1        |[0m [main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : f8d14150885e912e
+[35mcontrol-center_1        |[0m [kafka-admin-client-thread | adminclient-1] WARN org.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (broker/192.168.144.4:9092) could not be established. Broker may not be available.
+[35mcontrol-center_1        |[0m [kafka-admin-client-thread | adminclient-1] WARN org.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (broker/192.168.144.4:9092) could not be established. Broker may not be available.
+[35mcontrol-center_1        |[0m [kafka-admin-client-thread | adminclient-1] WARN org.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (broker/192.168.144.4:9092) could not be established. Broker may not be available.
+[35mcontrol-center_1        |[0m [kafka-admin-client-thread | adminclient-1] WARN org.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (broker/192.168.144.4:9092) could not be established. Broker may not be available.
+[35mcontrol-center_1        |[0m ===> Launching ... 
+[35mcontrol-center_1        |[0m ===> Launching control-center ... 
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:06,369] WARN Invalid value 1 for configuration confluent.controlcenter.internal.topics.replication: Value must be at least 3 (io.confluent.controlcenter.ControlCenterConfig)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:06,375] INFO ControlCenterConfig values: 
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.internal.topics.retention.bytes = -1
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.streams.producer.delivery.timeout.ms = 2147483647
+[35mcontrol-center_1        |[0m 	confluent.support.metrics.enable = true
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.command.streams.start.timeout = 300000
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.internal.streams.start.timeout = 21600000
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.connect.timeout.ms = 15000
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.alert.cluster.down.send.rate = 12
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.ksql.advertised.url = http://localhost:8088
+[35mcontrol-center_1        |[0m 	bootstrap.servers = [broker:9092]
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.rest.advertised.url = 
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.streams.producer.linger.ms = 500
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.mail.from = c3@confluent.io
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.internal.topics.retention.ms = 604800000
+[35mcontrol-center_1        |[0m 	confluent.monitoring.interceptor.topic.config.validate = false
+[35mcontrol-center_1        |[0m 	confluent.metrics.topic.config.validate = false
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.connect.cluster = [connect-source:8091]
+[35mcontrol-center_1        |[0m 	confluent.metrics.topic.partitions = 12
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.schema.registry.enable = true
+[35mcontrol-center_1        |[0m 	confluent.metrics.topic.retention.bytes = -1
+[35mcontrol-center_1        |[0m 	confluent.monitoring.interceptor.topic.retention.ms = 259200000
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.mail.port = 587
+[35mcontrol-center_1        |[0m 	confluent.metrics.topic.replication = 1
+[35mcontrol-center_1        |[0m 	confluent.monitoring.interceptor.topic = _confluent-monitoring
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.rest.port = 9021
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.id = 1
+[35mcontrol-center_1        |[0m 	zookeeper.connect = zookeeper:2181
+[35mcontrol-center_1        |[0m 	confluent.metrics.topic = _confluent-metrics
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.rest.compression.enable = true
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.command.topic = _confluent-command
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.topic.inspection.enable = true
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.ksql.enable = true
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.internal.topics.replication = 1
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.internal.topics.partitions = 1
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.mail.host.name = localhost
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.alert.max.trigger.events = 1000
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.mail.password = 
+[35mcontrol-center_1        |[0m 	confluent.metrics.topic.skip.backlog.minutes = 15
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.schema.registry.url = [http://localhost:8081]
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.data.dir = /var/lib/confluent-control-center
+[35mcontrol-center_1        |[0m 	confluent.controlcenter..license.manager = _confluent-controlcenter-license-manager5-1-0
+[35mcontrol-center_1        |[0m 	confluent.license = 
+[35mcontrol-center_1        |[0m 	confluent.monitoring.interceptor.topic.skip.backlog.minutes = 15
+[35mcontrol-center_1        |[0m 	confluent.metrics.topic.max.message.bytes = 10485760
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.name = _confluent-controlcenter-5-1-0
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.auth.session.expiration.ms = 0
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.streams.producer.retries = 2147483647
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.mail.enabled = false
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.command.topic.retention.ms = 259200000
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.rest.hsts.enable = true
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.alert.cluster.down.autocreate = false
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.alert.cluster.down.to.email = 
+[35mcontrol-center_1        |[0m 	confluent.monitoring.interceptor.topic.retention.bytes = -1
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.streams.producer.retry.backoff.ms = 100
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.streams.producer.max.block.ms = 9223372036854775807
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.internal.topics.changelog.segment.bytes = 134217728
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.mail.username = 
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.disk.skew.warning.min.bytes = 1073741824
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.streams.num.stream.threads = 8
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.command.topic.replication = 1
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.mail.ssl.checkserveridentity = false
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.mail.bounce.address = 
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m # Set environment values if they exist as arguments
+[33mbroker_1                |[0m if [ $# -ne 0 ]; then
+[33mbroker_1                |[0m   echo "===> Overriding env params with args ..."
+[33mbroker_1                |[0m   for var in "$@"
+[33mbroker_1                |[0m   do
+[33mbroker_1                |[0m     export "$var"
+[33mbroker_1                |[0m   done
+[33mbroker_1                |[0m fi
+[33mbroker_1                |[0m + '[' 0 -ne 0 ']'
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m echo "===> ENV Variables ..."
+[33mbroker_1                |[0m ===> ENV Variables ...
+[33mbroker_1                |[0m + echo '===> ENV Variables ...'
+[33mbroker_1                |[0m env | sort
+[33mbroker_1                |[0m + env
+[33mbroker_1                |[0m + sort
+[33mbroker_1                |[0m ALLOW_UNSIGNED=false
+[33mbroker_1                |[0m COMPONENT=kafka
+[33mbroker_1                |[0m CONFLUENT_DEB_VERSION=1
+[33mbroker_1                |[0m CONFLUENT_MAJOR_VERSION=5
+[33mbroker_1                |[0m CONFLUENT_METRICS_ENABLE=true
+[33mbroker_1                |[0m CONFLUENT_METRICS_REPORTER_BOOTSTRAP_SERVERS=broker:9092
+[33mbroker_1                |[0m CONFLUENT_METRICS_REPORTER_TOPIC_REPLICAS=1
+[33mbroker_1                |[0m CONFLUENT_METRICS_REPORTER_ZOOKEEPER_CONNECT=zookeeper:2181
+[33mbroker_1                |[0m CONFLUENT_MINOR_VERSION=0
+[33mbroker_1                |[0m CONFLUENT_MVN_LABEL=
+[33mbroker_1                |[0m CONFLUENT_PATCH_VERSION=0
+[33mbroker_1                |[0m CONFLUENT_PLATFORM_LABEL=
+[33mbroker_1                |[0m CONFLUENT_SUPPORT_CUSTOMER_ID=anonymous
+[33mbroker_1                |[0m CONFLUENT_VERSION=5.0.0
+[33mbroker_1                |[0m CUB_CLASSPATH=/etc/confluent/docker/docker-utils.jar
+[33mbroker_1                |[0m HOME=/root
+[33mbroker_1                |[0m HOSTNAME=broker
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://broker:9092,PLAINTEXT_HOST://localhost:29092
+[33mbroker_1                |[0m echo "===> User"
+[33mbroker_1                |[0m KAFKA_AUTO_CREATE_TOPICS_ENABLE=true
+[33mbroker_1                |[0m + echo '===> User'
+[33mbroker_1                |[0m id
+[33mbroker_1                |[0m KAFKA_BROKER_ID=1
+[33mbroker_1                |[0m + id
+[33mbroker_1                |[0m KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS=0
+[33mbroker_1                |[0m KAFKA_INTER_BROKER_LISTENER_NAME=PLAINTEXT
+[33mbroker_1                |[0m KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+[33mbroker_1                |[0m KAFKA_LOG4J_ROOT_LOGLEVEL=DEBUG
+[33mbroker_1                |[0m KAFKA_METRIC_REPORTERS=io.confluent.metrics.reporter.ConfluentMetricsReporter
+[33mbroker_1                |[0m KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1
+[33mbroker_1                |[0m KAFKA_TOOLS_LOG4J_ROOT_LOGLEVEL=DEBUG
+[33mbroker_1                |[0m KAFKA_VERSION=2.0.0
+[33mbroker_1                |[0m KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+[33mbroker_1                |[0m LANG=C.UTF-8
+[33mbroker_1                |[0m PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+[33mbroker_1                |[0m PWD=/
+[33mbroker_1                |[0m PYTHON_PIP_VERSION=8.1.2
+[33mbroker_1                |[0m PYTHON_VERSION=2.7.9-1
+[33mbroker_1                |[0m SCALA_VERSION=2.11
+[33mbroker_1                |[0m SHLVL=1
+[33mbroker_1                |[0m ZULU_OPENJDK_VERSION=8=8.30.0.1
+[33mbroker_1                |[0m _=/usr/bin/env
+[33mbroker_1                |[0m ===> User
+[33mbroker_1                |[0m uid=0(root) gid=0(root) groups=0(root)
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m echo "===> Configuring ..."
+[33mbroker_1                |[0m ===> Configuring ...
+[33mbroker_1                |[0m + echo '===> Configuring ...'
+[33mbroker_1                |[0m /etc/confluent/docker/configure
+[33mbroker_1                |[0m + /etc/confluent/docker/configure
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m dub ensure KAFKA_ZOOKEEPER_CONNECT
+[33mbroker_1                |[0m + dub ensure KAFKA_ZOOKEEPER_CONNECT
+[33mbroker_1                |[0m dub ensure KAFKA_ADVERTISED_LISTENERS
+[33mbroker_1                |[0m + dub ensure KAFKA_ADVERTISED_LISTENERS
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m # By default, LISTENERS is derived from ADVERTISED_LISTENERS by replacing
+[33mbroker_1                |[0m # hosts with 0.0.0.0. This is good default as it ensures that the broker
+[33mbroker_1                |[0m # process listens on all ports.
+[33mbroker_1                |[0m if [[ -z "${KAFKA_LISTENERS-}" ]]
+[33mbroker_1                |[0m then
+[33mbroker_1                |[0m   export KAFKA_LISTENERS
+[33mbroker_1                |[0m   KAFKA_LISTENERS=$(cub listeners "$KAFKA_ADVERTISED_LISTENERS")
+[33mbroker_1                |[0m fi
+[33mbroker_1                |[0m + [[ -z '' ]]
+[33mbroker_1                |[0m + export KAFKA_LISTENERS
+[33mbroker_1                |[0m cub listeners "$KAFKA_ADVERTISED_LISTENERS"
+[33mbroker_1                |[0m ++ cub listeners PLAINTEXT://broker:9092,PLAINTEXT_HOST://localhost:29092
+[33mbroker_1                |[0m + KAFKA_LISTENERS=PLAINTEXT://0.0.0.0:9092,PLAINTEXT_HOST://0.0.0.0:29092
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m dub path /etc/kafka/ writable
+[33mbroker_1                |[0m + dub path /etc/kafka/ writable
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m if [[ -z "${KAFKA_LOG_DIRS-}" ]]
+[33mbroker_1                |[0m then
+[33mbroker_1                |[0m   export KAFKA_LOG_DIRS
+[33mbroker_1                |[0m   KAFKA_LOG_DIRS="/var/lib/kafka/data"
+[33mbroker_1                |[0m fi
+[33mbroker_1                |[0m + [[ -z '' ]]
+[33mbroker_1                |[0m + export KAFKA_LOG_DIRS
+[32mconnect_1               |[0m ===> ENV Variables ...
+[32mconnect_1               |[0m ALLOW_UNSIGNED=false
+[32mconnect_1               |[0m AWS_ACCESS_KEY_ID=test
+[32mconnect_1               |[0m AWS_SECRET_KEY=test
+[32mconnect_1               |[0m CLASSPATH=/usr/share/java/monitoring-interceptors/monitoring-interceptors-5.0.0.jar
+[32mconnect_1               |[0m COMPONENT=kafka-connect
+[32mconnect_1               |[0m CONFLUENT_DEB_VERSION=1
+[32mconnect_1               |[0m CONFLUENT_MAJOR_VERSION=5
+[32mconnect_1               |[0m CONFLUENT_MINOR_VERSION=1
+[32mconnect_1               |[0m CONFLUENT_MVN_LABEL=
+[32mconnect_1               |[0m CONFLUENT_PATCH_VERSION=0
+[32mconnect_1               |[0m CONFLUENT_PLATFORM_LABEL=
+[32mconnect_1               |[0m CONFLUENT_VERSION=5.1.0
+[32mconnect_1               |[0m CONNECT_BOOTSTRAP_SERVERS=broker:9092
+[32mconnect_1               |[0m CONNECT_CONFIG_STORAGE_REPLICATION_FACTOR=1
+[32mconnect_1               |[0m CONNECT_CONFIG_STORAGE_TOPIC=docker-connect-configs
+[32mconnect_1               |[0m CONNECT_CONSUMER_INTERCEPTOR_CLASSES=io.confluent.monitoring.clients.interceptor.MonitoringConsumerInterceptor
+[32mconnect_1               |[0m CONNECT_CONSUMER_REQUEST_TIMEOUT_MS=120000
+[32mconnect_1               |[0m CONNECT_CONSUMER_RETRY_BACKOFF_MS=500
+[32mconnect_1               |[0m CONNECT_ENHANCED_SCHEMA_SUPPORT=true
+[32mconnect_1               |[0m CONNECT_GROUP_ID=compose-connect-group
+[32mconnect_1               |[0m CONNECT_INTERNAL_KEY_CONVERTER=org.apache.kafka.connect.json.JsonConverter
+[32mconnect_1               |[0m CONNECT_INTERNAL_VALUE_CONVERTER=org.apache.kafka.connect.json.JsonConverter
+[32mconnect_1               |[0m CONNECT_KEY_CONVERTER=io.confluent.connect.avro.AvroConverter
+[32mconnect_1               |[0m CONNECT_KEY_CONVERTER_SCHEMA_REGISTRY_URL=http://schema-registry:8081
+[32mconnect_1               |[0m CONNECT_LOG4J_ROOT_LOGLEVEL=INFO
+[32mconnect_1               |[0m CONNECT_OFFSET_FLUSH_INTERVAL_MS=10000
+[32mconnect_1               |[0m CONNECT_OFFSET_STORAGE_REPLICATION_FACTOR=1
+[32mconnect_1               |[0m CONNECT_OFFSET_STORAGE_TOPIC=docker-connect-offsets
+[32mconnect_1               |[0m CONNECT_PLUGIN_PATH=/usr/share/java
+[32mconnect_1               |[0m CONNECT_PRODUCER_INTERCEPTOR_CLASSES=io.confluent.monitoring.clients.interceptor.MonitoringProducerInterceptor
+[32mconnect_1               |[0m CONNECT_PRODUCER_REQUEST_TIMEOUT_MS=120000
+[32mconnect_1               |[0m CONNECT_PRODUCER_RETRY_BACKOFF_MS=500
+[32mconnect_1               |[0m CONNECT_REST_ADVERTISED_HOST_NAME=connect
+[32mconnect_1               |[0m CONNECT_REST_PORT=8083
+[32mconnect_1               |[0m CONNECT_SCHEMA_COMPATIBILITY=NONE
+[32mconnect_1               |[0m CONNECT_STATUS_STORAGE_REPLICATION_FACTOR=1
+[32mconnect_1               |[0m CONNECT_STATUS_STORAGE_TOPIC=docker-connect-status
+[32mconnect_1               |[0m CONNECT_TOOLS_LOG4J_ROOT_LOGLEVEL=DEBUG
+[32mconnect_1               |[0m CONNECT_VALUE_CONVERTER=io.confluent.connect.avro.AvroConverter
+[32mconnect_1               |[0m CONNECT_VALUE_CONVERTER_SCHEMA_REGISTRY_URL=http://schema-registry:8081
+[32mconnect_1               |[0m CONNECT_ZOOKEEPER_CONNECT=zookeeper:2181
+[32mconnect_1               |[0m CUB_CLASSPATH=/etc/confluent/docker/docker-utils.jar
+[32mconnect_1               |[0m HOME=/root
+[32mconnect_1               |[0m HOSTNAME=connect
+[32mconnect_1               |[0m KAFKA_ADVERTISED_LISTENERS=
+[32mconnect_1               |[0m KAFKA_VERSION=2.1.0
+[32mconnect_1               |[0m KAFKA_ZOOKEEPER_CONNECT=
+[32mconnect_1               |[0m LANG=C.UTF-8
+[32mconnect_1               |[0m PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+[32mconnect_1               |[0m PWD=/
+[32mconnect_1               |[0m PYTHON_PIP_VERSION=8.1.2
+[32mconnect_1               |[0m PYTHON_VERSION=2.7.9-1
+[32mconnect_1               |[0m S3_REGION=ap-southeast-2
+[32mconnect_1               |[0m SCALA_VERSION=2.11
+[32mconnect_1               |[0m SHLVL=1
+[32mconnect_1               |[0m ZULU_OPENJDK_VERSION=8=8.30.0.1
+[32mconnect_1               |[0m _=/usr/bin/env
+[32mconnect_1               |[0m ===> User
+[32mconnect_1               |[0m uid=0(root) gid=0(root) groups=0(root)
+[32mconnect_1               |[0m ===> Configuring ...
+[32mconnect_1               |[0m ===> Running preflight checks ... 
+[32mconnect_1               |[0m ===> Check if Kafka is healthy ...
+[32mconnect_1               |[0m [main] INFO org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+[32mconnect_1               |[0m 	bootstrap.servers = [broker:9092]
+[32mconnect_1               |[0m 	client.dns.lookup = default
+[32mconnect_1               |[0m 	client.id = 
+[32mconnect_1               |[0m 	connections.max.idle.ms = 300000
+[32mconnect_1               |[0m 	metadata.max.age.ms = 300000
+[32mconnect_1               |[0m 	metric.reporters = []
+[32mconnect_1               |[0m 	metrics.num.samples = 2
+[32mconnect_1               |[0m 	metrics.recording.level = INFO
+[32mconnect_1               |[0m 	metrics.sample.window.ms = 30000
+[32mconnect_1               |[0m 	receive.buffer.bytes = 65536
+[32mconnect_1               |[0m 	reconnect.backoff.max.ms = 1000
+[32mconnect_1               |[0m 	reconnect.backoff.ms = 50
+[32mconnect_1               |[0m 	request.timeout.ms = 120000
+[32mconnect_1               |[0m 	retries = 5
+[32mconnect_1               |[0m 	retry.backoff.ms = 100
+[32mconnect_1               |[0m 	sasl.client.callback.handler.class = null
+[32mconnect_1               |[0m 	sasl.jaas.config = null
+[32mconnect_1               |[0m 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[32mconnect_1               |[0m 	sasl.kerberos.min.time.before.relogin = 60000
+[32mconnect_1               |[0m 	sasl.kerberos.service.name = null
+[32mconnect_1               |[0m 	sasl.kerberos.ticket.renew.jitter = 0.05
+[32mconnect_1               |[0m 	sasl.kerberos.ticket.renew.window.factor = 0.8
+[32mconnect_1               |[0m 	sasl.login.callback.handler.class = null
+[32mconnect_1               |[0m 	sasl.login.class = null
+[32mconnect_1               |[0m 	sasl.login.refresh.buffer.seconds = 300
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.streams.retries = 2147483647
+[35mcontrol-center_1        |[0m 	confluent.monitoring.interceptor.topic.replication = 1
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.streams.consumer.session.timeout.ms = 60000
+[35mcontrol-center_1        |[0m 	confluent.metrics.topic.retention.ms = 259200000
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.connect.zookeeper.connect = 
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.mail.starttls.required = false
+[35mcontrol-center_1        |[0m 	confluent.support.metrics.customer.id = anonymous
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.auth.restricted.roles = []
+[35mcontrol-center_1        |[0m 	confluent.monitoring.interceptor.topic.partitions = 1
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.streams.producer.compression.type = lz4
+[35mcontrol-center_1        |[0m 	confluent.controlcenter.ksql.url = http://ksql-server:8088
+[35mcontrol-center_1        |[0m  (io.confluent.controlcenter.ControlCenterConfig)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:08,655] INFO StreamsConfig values: 
+[35mcontrol-center_1        |[0m 	application.id = _confluent-controlcenter-5-1-0-1
+[35mcontrol-center_1        |[0m 	application.server = 
+[35mcontrol-center_1        |[0m 	bootstrap.servers = [broker:9092]
+[35mcontrol-center_1        |[0m 	buffered.records.per.partition = 100
+[35mcontrol-center_1        |[0m 	cache.max.bytes.buffering = 10485760
+[35mcontrol-center_1        |[0m 	client.id = 
+[35mcontrol-center_1        |[0m 	commit.interval.ms = 30000
+[35mcontrol-center_1        |[0m 	connections.max.idle.ms = 540000
+[35mcontrol-center_1        |[0m 	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndContinueExceptionHandler
+[35mcontrol-center_1        |[0m 	default.key.serde = class org.apache.kafka.common.serialization.Serdes$ByteArraySerde
+[35mcontrol-center_1        |[0m 	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+[35mcontrol-center_1        |[0m 	default.timestamp.extractor = class io.confluent.controlcenter.streams.WindowExtractor
+[35mcontrol-center_1        |[0m 	default.value.serde = class org.apache.kafka.common.serialization.Serdes$ByteArraySerde
+[35mcontrol-center_1        |[0m 	max.task.idle.ms = 0
+[35mcontrol-center_1        |[0m 	metadata.max.age.ms = 300000
+[35mcontrol-center_1        |[0m 	metric.reporters = []
+[35mcontrol-center_1        |[0m 	metrics.num.samples = 2
+[35mcontrol-center_1        |[0m 	metrics.recording.level = INFO
+[35mcontrol-center_1        |[0m 	metrics.sample.window.ms = 30000
+[35mcontrol-center_1        |[0m 	num.standby.replicas = 0
+[35mcontrol-center_1        |[0m 	num.stream.threads = 8
+[35mcontrol-center_1        |[0m 	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+[35mcontrol-center_1        |[0m 	poll.ms = 100
+[35mcontrol-center_1        |[0m 	processing.guarantee = at_least_once
+[35mcontrol-center_1        |[0m 	receive.buffer.bytes = 32768
+[35mcontrol-center_1        |[0m 	reconnect.backoff.max.ms = 1000
+[35mcontrol-center_1        |[0m 	reconnect.backoff.ms = 50
+[35mcontrol-center_1        |[0m 	replication.factor = 1
+[35mcontrol-center_1        |[0m 	request.timeout.ms = 40000
+[35mcontrol-center_1        |[0m 	retries = 2147483647
+[35mcontrol-center_1        |[0m 	retry.backoff.ms = 100
+[35mcontrol-center_1        |[0m 	rocksdb.config.setter = class io.confluent.controlcenter.streams.RocksDBConfigurator
+[35mcontrol-center_1        |[0m 	security.protocol = PLAINTEXT
+[35mcontrol-center_1        |[0m 	send.buffer.bytes = 131072
+[35mcontrol-center_1        |[0m 	state.cleanup.delay.ms = 600000
+[35mcontrol-center_1        |[0m 	state.dir = /var/lib/confluent-control-center/1/kafka-streams
+[35mcontrol-center_1        |[0m 	topology.optimization = all
+[35mcontrol-center_1        |[0m 	upgrade.from = null
+[35mcontrol-center_1        |[0m 	windowstore.changelog.additional.retention.ms = 86400000
+[35mcontrol-center_1        |[0m  (org.apache.kafka.streams.StreamsConfig)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,168] INFO setting topic names _confluent-monitoring _confluent-controlcenter-5-1-0-1-monitoring-aggregate-rekey _confluent-controlcenter-5-1-0-1-group-aggregate-topic-ONE_MINUTE (io.confluent.controlcenter.streams.WindowExtractor)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,181] INFO transformerStore=MonitoringVerifierStore (io.confluent.controlcenter.streams.StreamsModule)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,191] INFO transformerStore=MonitoringTriggerStore (io.confluent.controlcenter.streams.StreamsModule)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,191] INFO transformerStore=TriggerActionsStore (io.confluent.controlcenter.streams.StreamsModule)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,191] INFO transformerStore=TriggerEventsStore (io.confluent.controlcenter.streams.StreamsModule)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,191] INFO transformerStore=AlertHistoryStore (io.confluent.controlcenter.streams.StreamsModule)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,244] INFO ProducerConfig values: 
+[35mcontrol-center_1        |[0m 	acks = all
+[35mcontrol-center_1        |[0m 	batch.size = 16384
+[35mcontrol-center_1        |[0m 	bootstrap.servers = [broker:9092]
+[35mcontrol-center_1        |[0m 	buffer.memory = 33554432
+[35mcontrol-center_1        |[0m 	client.dns.lookup = default
+[35mcontrol-center_1        |[0m 	client.id = confluent-control-center-heartbeat-sender-1-producer
+[35mcontrol-center_1        |[0m 	compression.type = lz4
+[35mcontrol-center_1        |[0m 	connections.max.idle.ms = 540000
+[35mcontrol-center_1        |[0m 	delivery.timeout.ms = 2147483647
+[35mcontrol-center_1        |[0m 	enable.idempotence = false
+[35mcontrol-center_1        |[0m 	interceptor.classes = []
+[35mcontrol-center_1        |[0m 	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+[35mcontrol-center_1        |[0m 	linger.ms = 500
+[35mcontrol-center_1        |[0m 	max.block.ms = 9223372036854775807
+[35mcontrol-center_1        |[0m 	max.in.flight.requests.per.connection = 1
+[35mcontrol-center_1        |[0m 	max.request.size = 10485760
+[35mcontrol-center_1        |[0m 	metadata.max.age.ms = 300000
+[35mcontrol-center_1        |[0m 	metric.reporters = []
+[35mcontrol-center_1        |[0m 	metrics.num.samples = 2
+[35mcontrol-center_1        |[0m 	metrics.recording.level = INFO
+[35mcontrol-center_1        |[0m 	metrics.sample.window.ms = 30000
+[35mcontrol-center_1        |[0m 	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+[35mcontrol-center_1        |[0m 	receive.buffer.bytes = 32768
+[35mcontrol-center_1        |[0m 	reconnect.backoff.max.ms = 1000
+[35mcontrol-center_1        |[0m 	reconnect.backoff.ms = 50
+[35mcontrol-center_1        |[0m 	request.timeout.ms = 30000
+[35mcontrol-center_1        |[0m 	retries = 10
+[35mcontrol-center_1        |[0m 	retry.backoff.ms = 500
+[35mcontrol-center_1        |[0m 	sasl.client.callback.handler.class = null
+[35mcontrol-center_1        |[0m 	sasl.jaas.config = null
+[35mcontrol-center_1        |[0m 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[35mcontrol-center_1        |[0m 	sasl.kerberos.min.time.before.relogin = 60000
+[35mcontrol-center_1        |[0m 	sasl.kerberos.service.name = null
+[35mcontrol-center_1        |[0m 	sasl.kerberos.ticket.renew.jitter = 0.05
+[35mcontrol-center_1        |[0m 	sasl.kerberos.ticket.renew.window.factor = 0.8
+[35mcontrol-center_1        |[0m 	sasl.login.callback.handler.class = null
+[35mcontrol-center_1        |[0m 	sasl.login.class = null
+[35mcontrol-center_1        |[0m 	sasl.login.refresh.buffer.seconds = 300
+[35mcontrol-center_1        |[0m 	sasl.login.refresh.min.period.seconds = 60
+[35mcontrol-center_1        |[0m 	sasl.login.refresh.window.factor = 0.8
+[35mcontrol-center_1        |[0m 	sasl.login.refresh.window.jitter = 0.05
+[35mcontrol-center_1        |[0m 	sasl.mechanism = GSSAPI
+[32mconnect_1               |[0m 	sasl.login.refresh.min.period.seconds = 60
+[32mconnect_1               |[0m 	sasl.login.refresh.window.factor = 0.8
+[32mconnect_1               |[0m 	sasl.login.refresh.window.jitter = 0.05
+[32mconnect_1               |[0m 	sasl.mechanism = GSSAPI
+[32mconnect_1               |[0m 	security.protocol = PLAINTEXT
+[32mconnect_1               |[0m 	send.buffer.bytes = 131072
+[32mconnect_1               |[0m 	ssl.cipher.suites = null
+[32mconnect_1               |[0m 	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+[32mconnect_1               |[0m 	ssl.endpoint.identification.algorithm = https
+[32mconnect_1               |[0m 	ssl.key.password = null
+[32mconnect_1               |[0m 	ssl.keymanager.algorithm = SunX509
+[32mconnect_1               |[0m 	ssl.keystore.location = null
+[32mconnect_1               |[0m 	ssl.keystore.password = null
+[32mconnect_1               |[0m 	ssl.keystore.type = JKS
+[32mconnect_1               |[0m 	ssl.protocol = TLS
+[32mconnect_1               |[0m 	ssl.provider = null
+[32mconnect_1               |[0m 	ssl.secure.random.implementation = null
+[32mconnect_1               |[0m 	ssl.trustmanager.algorithm = PKIX
+[32mconnect_1               |[0m 	ssl.truststore.location = null
+[32mconnect_1               |[0m 	ssl.truststore.password = null
+[32mconnect_1               |[0m 	ssl.truststore.type = JKS
+[32mconnect_1               |[0m 
+[32mconnect_1               |[0m [main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.1.0-cp1
+[32mconnect_1               |[0m [main] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : f8d14150885e912e
+[32mconnect_1               |[0m ===> Launching ... 
+[32mconnect_1               |[0m ===> Launching kafka-connect ... 
+[32mconnect_1               |[0m [2020-11-06 05:28:06,913] INFO Kafka Connect distributed worker initializing ... (org.apache.kafka.connect.cli.ConnectDistributed)
+[32mconnect_1               |[0m [2020-11-06 05:28:06,937] INFO WorkerInfo values: 
+[32mconnect_1               |[0m 	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote=true, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=/var/log/kafka, -Dlog4j.configuration=file:/etc/kafka/connect-log4j.properties
+[32mconnect_1               |[0m 	jvm.spec = Azul Systems, Inc., OpenJDK 64-Bit Server VM, 1.8.0_172, 25.172-b01
+[32mconnect_1               |[0m 	jvm.classpath = /etc/kafka-connect/jars/*:/usr/share/java/kafka/jetty-servlet-9.4.12.v20180830.jar:/usr/share/java/kafka/reflections-0.9.11.jar:/usr/share/java/kafka/scala-logging_2.11-3.9.0.jar:/usr/share/java/kafka/zookeeper-3.4.13.jar:/usr/share/java/kafka/jackson-core-asl-1.9.13.jar:/usr/share/java/kafka/kafka-streams-examples-2.1.0-cp1.jar:/usr/share/java/kafka/kafka-streams-test-utils-2.1.0-cp1.jar:/usr/share/java/kafka/jackson-databind-2.9.7.jar:/usr/share/java/kafka/kafka-clients-2.1.0-cp1.jar:/usr/share/java/kafka/jline-0.9.94.jar:/usr/share/java/kafka/javax.inject-2.5.0-b42.jar:/usr/share/java/kafka/slf4j-log4j12-1.7.25.jar:/usr/share/java/kafka/hk2-utils-2.5.0-b42.jar:/usr/share/java/kafka/jetty-http-9.4.12.v20180830.jar:/usr/share/java/kafka/snappy-java-1.1.7.2.jar:/usr/share/java/kafka/connect-api-2.1.0-cp1.jar:/usr/share/java/kafka/kafka-tools-2.1.0-cp1.jar:/usr/share/java/kafka/jersey-common-2.27.jar:/usr/share/java/kafka/jaxb-api-2.3.0.jar:/usr/share/java/kafka/connect-file-2.1.0-cp1.jar:/usr/share/java/kafka/activation-1.1.1.jar:/usr/share/java/kafka/jackson-mapper-asl-1.9.13.jar:/usr/share/java/kafka/jackson-module-jaxb-annotations-2.9.7.jar:/usr/share/java/kafka/lz4-java-1.5.0.jar:/usr/share/java/kafka/hk2-api-2.5.0-b42.jar:/usr/share/java/kafka/commons-codec-1.9.jar:/usr/share/java/kafka/javax.ws.rs-api-2.1.jar:/usr/share/java/kafka/jersey-container-servlet-2.27.jar:/usr/share/java/kafka/hk2-locator-2.5.0-b42.jar:/usr/share/java/kafka/jetty-client-9.4.12.v20180830.jar:/usr/share/java/kafka/kafka_2.11-2.1.0-cp1-sources.jar:/usr/share/java/kafka/zstd-jni-1.3.5-4.jar:/usr/share/java/kafka/plexus-utils-3.1.0.jar:/usr/share/java/kafka/jetty-security-9.4.12.v20180830.jar:/usr/share/java/kafka/jetty-util-9.4.12.v20180830.jar:/usr/share/java/kafka/commons-validator-1.4.1.jar:/usr/share/java/kafka/jersey-client-2.27.jar:/usr/share/java/kafka/httpclient-4.5.2.jar:/usr/share/java/kafka/jetty-server-9.4.12.v20180830.jar:/usr/share/java/kafka/commons-beanutils-1.8.3.jar:/usr/share/java/kafka/netty-3.10.6.Final.jar:/usr/share/java/kafka/jackson-jaxrs-base-2.9.7.jar:/usr/share/java/kafka/httpcore-4.4.4.jar:/usr/share/java/kafka/jackson-annotations-2.9.7.jar:/usr/share/java/kafka/slf4j-api-1.7.25.jar:/usr/share/java/kafka/javax.inject-1.jar:/usr/share/java/kafka/osgi-resource-locator-1.0.1.jar:/usr/share/java/kafka/jersey-hk2-2.27.jar:/usr/share/java/kafka/scala-library-2.11.12.jar:/usr/share/java/kafka/kafka.jar:/usr/share/java/kafka/connect-transforms-2.1.0-cp1.jar:/usr/share/java/kafka/kafka-streams-2.1.0-cp1.jar:/usr/share/java/kafka/javassist-3.22.0-CR2.jar:/usr/share/java/kafka/jackson-core-2.9.7.jar:/usr/share/java/kafka/commons-lang3-3.1.jar:/usr/share/java/kafka/aopalliance-repackaged-2.5.0-b42.jar:/usr/share/java/kafka/kafka_2.11-2.1.0-cp1-javadoc.jar:/usr/share/java/kafka/commons-compress-1.8.1.jar:/usr/share/java/kafka/jersey-server-2.27.jar:/usr/share/java/kafka/paranamer-2.7.jar:/usr/share/java/kafka/commons-digester-1.8.1.jar:/usr/share/java/kafka/javax.annotation-api-1.2.jar:/usr/share/java/kafka/jersey-container-servlet-core-2.27.jar:/usr/share/java/kafka/common-utils-5.1.0.jar:/usr/share/java/kafka/jetty-servlets-9.4.12.v20180830.jar:/usr/share/java/kafka/metrics-core-2.2.0.jar:/usr/share/java/kafka/kafka_2.11-2.1.0-cp1-test.jar:/usr/share/java/kafka/kafka-log4j-appender-2.1.0-cp1.jar:/usr/share/java/kafka/kafka-streams-scala_2.11-2.1.0-cp1.jar:/usr/share/java/kafka/support-metrics-client-5.1.0.jar:/usr/share/java/kafka/maven-artifact-3.5.4.jar:/usr/share/java/kafka/connect-basic-auth-extension-2.1.0-cp1.jar:/usr/share/java/kafka/jersey-media-jaxb-2.27.jar:/usr/share/java/kafka/javax.ws.rs-api-2.1.1.jar:/usr/share/java/kafka/javax.servlet-api-3.1.0.jar:/usr/share/java/kafka/jopt-simple-5.0.4.jar:/usr/share/java/kafka/rocksdbjni-5.14.2.jar:/usr/share/java/kafka/validation-api-1.1.0.Final.jar:/usr/share/java/kafka/audience-annotations-0.5.0.jar:/usr/share/java/kafka/kafka_2.11-2.1.0-cp1.jar:/usr/share/java/kafka/scala-reflect-2.11.12.jar:/usr/share/java/kafka/zkclient-0.10.jar:/usr/share/java/kafka/httpmime-4.5.2.jar:/usr/share/java/kafka/commons-lang3-3.5.jar:/usr/share/java/kafka/connect-json-2.1.0-cp1.jar:/usr/share/java/kafka/kafka_2.11-2.1.0-cp1-test-sources.jar:/usr/share/java/kafka/connect-runtime-2.1.0-cp1.jar:/usr/share/java/kafka/kafka_2.11-2.1.0-cp1-scaladoc.jar:/usr/share/java/kafka/argparse4j-0.7.0.jar:/usr/share/java/kafka/support-metrics-common-5.1.0.jar:/usr/share/java/kafka/jackson-jaxrs-json-provider-2.9.7.jar:/usr/share/java/kafka/jetty-io-9.4.12.v20180830.jar:/usr/share/java/kafka/commons-logging-1.2.jar:/usr/share/java/kafka/guava-20.0.jar:/usr/share/java/kafka/log4j-1.2.17.jar:/usr/share/java/kafka/xz-1.5.jar:/usr/share/java/kafka/jetty-continuation-9.4.12.v20180830.jar:/usr/share/java/kafka/commons-collections-3.2.1.jar:/usr/share/java/kafka/avro-1.8.1.jar:/usr/share/java/kafka/confluent-metrics-5.1.0.jar:/usr/share/java/confluent-common/zookeeper-3.4.13.jar:/usr/share/java/confluent-common/jline-0.9.94.jar:/usr/share/java/confluent-common/build-tools-5.1.0.jar:/usr/share/java/confluent-common/common-metrics-5.1.0.jar:/usr/share/java/confluent-common/netty-3.10.6.Final.jar:/usr/share/java/confluent-common/slf4j-api-1.7.25.jar:/usr/share/java/confluent-common/common-config-5.1.0.jar:/usr/share/java/confluent-common/common-utils-5.1.0.jar:/usr/share/java/confluent-common/audience-annotations-0.5.0.jar:/usr/share/java/confluent-common/zkclient-0.10.jar:/usr/share/java/kafka-serde-tools/jackson-core-asl-1.9.13.jar:/usr/share/java/kafka-serde-tools/kafka-schema-registry-client-5.1.0.jar:/usr/share/java/kafka-serde-tools/jackson-mapper-asl-1.9.13.jar:/usr/share/java/kafka-serde-tools/snappy-java-1.1.1.3.jar:/usr/share/java/kafka-serde-tools/jackson-databind-2.9.6.jar:/usr/share/java/kafka-serde-tools/kafka-json-serializer-5.1.0.jar:/usr/share/java/kafka-serde-tools/commons-compress-1.8.1.jar:/usr/share/java/kafka-serde-tools/paranamer-2.7.jar:/usr/share/java/kafka-serde-tools/jackson-annotations-2.9.6.jar:/usr/share/java/kafka-serde-tools/kafka-streams-avro-serde-5.1.0.jar:/usr/share/java/kafka-serde-tools/jackson-core-2.9.6.jar:/usr/share/java/kafka-serde-tools/kafka-avro-serializer-5.1.0.jar:/usr/share/java/kafka-serde-tools/kafka-connect-avro-converter-5.1.0.jar:/usr/share/java/kafka-serde-tools/xz-1.5.jar:/usr/share/java/kafka-serde-tools/avro-1.8.1.jar:/usr/share/java/monitoring-interceptors/monitoring-interceptors-5.1.0.jar:/usr/bin/../share/java/kafka/jetty-servlet-9.4.12.v20180830.jar:/usr/bin/../share/java/kafka/reflections-0.9.11.jar:/usr/bin/../share/java/kafka/scala-logging_2.11-3.9.0.jar:/usr/bin/../share/java/kafka/zookeeper-3.4.13.jar:/usr/bin/../share/java/kafka/jackson-core-asl-1.9.13.jar:/usr/bin/../share/java/kafka/kafka-streams-examples-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/kafka-streams-test-utils-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/jackson-databind-2.9.7.jar:/usr/bin/../share/java/kafka/kafka-clients-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/jline-0.9.94.jar:/usr/bin/../share/java/kafka/javax.inject-2.5.0-b42.jar:/usr/bin/../share/java/kafka/slf4j-log4j12-1.7.25.jar:/usr/bin/../share/java/kafka/hk2-utils-2.5.0-b42.jar:/usr/bin/../share/java/kafka/jetty-http-9.4.12.v20180830.jar:/usr/bin/../share/java/kafka/snappy-java-1.1.7.2.jar:/usr/bin/../share/java/kafka/connect-api-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/kafka-tools-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/jersey-common-2.27.jar:/usr/bin/../share/java/kafka/jaxb-api-2.3.0.jar:/usr/bin/../share/java/kafka/connect-file-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/activation-1.1.1.jar:/usr/bin/../share/java/kafka/jackson-mapper-asl-1.9.13.jar:/usr/bin/../share/java/kafka/jackson-module-jaxb-annotations-2.9.7.jar:/usr/bin/../share/java/kafka/lz4-java-1.5.0.jar:/usr/bin/../share/java/kafka/hk2-api-2.5.0-b42.jar:/usr/bin/../share/java/kafka/commons-codec-1.9.jar:/usr/bin/../share/java/kafka/javax.ws.rs-api-2.1.jar:/usr/bin/../share/java/kafka/jersey-container-servlet-2.27.jar:/usr/bin/../share/java/kafka/hk2-locator-2.5.0-b42.jar:/usr/bin/../share/java/kafka/jetty-client-9.4.12.v20180830.jar:/usr/bin/../share/java/kafka/kafka_2.11-2.1.0-cp1-sources.jar:/usr/bin/../share/java/kafka/zstd-jni-1.3.5-4.jar:/usr/bin/../share/java/kafka/plexus-utils-3.1.0.jar:/usr/bin/../share/java/kafka/jetty-security-9.4.12.v20180830.jar:/usr/bin/../share/java/kafka/jetty-util-9.4.12.v20180830.jar:/usr/bin/../share/java/kafka/commons-validator-1.4.1.jar:/usr/bin/../share/java/kafka/jersey-client-2.27.jar:/usr/bin/../share/java/kafka/httpclient-4.5.2.jar:/usr/bin/../share/java/kafka/jetty-server-9.4.12.v20180830.jar:/usr/bin/../share/java/kafka/commons-beanutils-1.8.3.jar:/usr/bin/../share/java/kafka/netty-3.10.6.Final.jar:/usr/bin/../share/java/kafka/jackson-jaxrs-base-2.9.7.jar:/usr/bin/../share/java/kafka/httpcore-4.4.4.jar:/usr/bin/../share/java/kafka/jackson-annotations-2.9.7.jar:/usr/bin/../share/java/kafka/slf4j-api-1.7.25.jar:/usr/bin/../share/java/kafka/javax.inject-1.jar:/usr/bin/../share/java/kafka/osgi-resource-locator-1.0.1.jar:/usr/bin/../share/java/kafka/jersey-hk2-2.27.jar:/usr/bin/../share/java/kafka/scala-library-2.11.12.jar:/usr/bin/../share/java/kafka/kafka.jar:/usr/bin/../share/java/kafka/connect-transforms-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/kafka-streams-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/javassist-3.22.0-CR2.jar:/usr/bin/../share/java/kafka/jackson-core-2.9.7.jar:/usr/bin/../share/java/kafka/commons-lang3-3.1.jar:/usr/bin/../share/java/kafka/aopalliance-repackaged-2.5.0-b42.jar:/usr/bin/../share/java/kafka/kafka_2.11-2.1.0-cp1-javadoc.jar:/usr/bin/../share/java/kafka/commons-compress-1.8.1.jar:/usr/bin/../share/java/kafka/jersey-server-2.27.jar:/usr/bin/../share/java/kafka/paranamer-2.7.jar:/usr/bin/../share/java/kafka/commons-digester-1.8.1.jar:/usr/bin/../share/java/kafka/javax.annotation-api-1.2.jar:/usr/bin/../share/java/kafka/jersey-container-servlet-core-2.27.jar:/usr/bin/../share/java/kafka/common-utils-5.1.0.jar:/usr/bin/../share/java/kafka/jetty-servlets-9.4.12.v20180830.jar:/usr/bin/../share/java/kafka/metrics-core-2.2.0.jar:/usr/bin/../share/java/kafka/kafka_2.11-2.1.0-cp1-test.jar:/usr/bin/../share/java/kafka/kafka-log4j-appender-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/kafka-streams-scala_2.11-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/support-metrics-client-5.1.0.jar:/usr/bin/../share/java/kafka/maven-artifact-3.5.4.jar:/usr/bin/../share/java/kafka/connect-basic-auth-extension-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/jersey-media-jaxb-2.27.jar:/usr/bin/../share/java/kafka/javax.ws.rs-api-2.1.1.jar:/usr/bin/../share/java/kafka/javax.servlet-api-3.1.0.jar:/usr/bin/../share/java/kafka/jopt-simple-5.0.4.jar:/usr/bin/../share/java/kafka/rocksdbjni-5.14.2.jar:/usr/bin/../share/java/kafka/validation-api-1.1.0.Final.jar:/usr/bin/../share/java/kafka/audience-annotations-0.5.0.jar:/usr/bin/../share/java/kafka/kafka_2.11-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/scala-reflect-2.11.12.jar:/usr/bin/../share/java/kafka/zkclient-0.10.jar:/usr/bin/../share/java/kafka/httpmime-4.5.2.jar:/usr/bin/../share/java/kafka/commons-lang3-3.5.jar:/usr/bin/../share/java/kafka/connect-json-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/kafka_2.11-2.1.0-cp1-test-sources.jar:/usr/bin/../share/java/kafka/connect-runtime-2.1.0-cp1.jar:/usr/bin/../share/java/kafka/kafka_2.11-2.1.0-cp1-scaladoc.jar:/usr/bin/../share/java/kafka/argparse4j-0.7.0.jar:/usr/bin/../share/java/kafka/support-metrics-common-5.1.0.jar:/usr/bin/../share/java/kafka/jackson-jaxrs-json-provider-2.9.7.jar:/usr/bin/../share/java/kafka/jetty-io-9.4.12.v20180830.jar:/usr/bin/../share/java/kafka/commons-logging-1.2.jar:/usr/bin/../share/java/kafka/guava-20.0.jar:/usr/bin/../share/java/kafka/log4j-1.2.17.jar:/usr/bin/../share/java/kafka/xz-1.5.jar:/usr/bin/../share/java/kafka/jetty-continuation-9.4.12.v20180830.jar:/usr/bin/../share/java/kafka/commons-collections-3.2.1.jar:/usr/bin/../share/java/kafka/avro-1.8.1.jar:/usr/bin/../share/java/kafka/confluent-metrics-5.1.0.jar:/usr/bin/../share/java/confluent-support-metrics/*:/usr/share/java/confluent-support-metrics/*
+[35mcontrol-center_1        |[0m 	security.protocol = PLAINTEXT
+[35mcontrol-center_1        |[0m 	send.buffer.bytes = 131072
+[35mcontrol-center_1        |[0m 	ssl.cipher.suites = null
+[35mcontrol-center_1        |[0m 	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+[35mcontrol-center_1        |[0m 	ssl.endpoint.identification.algorithm = https
+[35mcontrol-center_1        |[0m 	ssl.key.password = null
+[35mcontrol-center_1        |[0m 	ssl.keymanager.algorithm = SunX509
+[35mcontrol-center_1        |[0m 	ssl.keystore.location = null
+[35mcontrol-center_1        |[0m 	ssl.keystore.password = null
+[35mcontrol-center_1        |[0m 	ssl.keystore.type = JKS
+[35mcontrol-center_1        |[0m 	ssl.protocol = TLS
+[35mcontrol-center_1        |[0m 	ssl.provider = null
+[35mcontrol-center_1        |[0m 	ssl.secure.random.implementation = null
+[35mcontrol-center_1        |[0m 	ssl.trustmanager.algorithm = PKIX
+[35mcontrol-center_1        |[0m 	ssl.truststore.location = null
+[35mcontrol-center_1        |[0m 	ssl.truststore.password = null
+[35mcontrol-center_1        |[0m 	ssl.truststore.type = JKS
+[35mcontrol-center_1        |[0m 	transaction.timeout.ms = 60000
+[35mcontrol-center_1        |[0m 	transactional.id = null
+[35mcontrol-center_1        |[0m 	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+[35mcontrol-center_1        |[0m  (org.apache.kafka.clients.producer.ProducerConfig)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,398] INFO Kafka version : 2.1.0-cp1 (org.apache.kafka.common.utils.AppInfoParser)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,398] INFO Kafka commitId : bda8715f42a1a3db (org.apache.kafka.common.utils.AppInfoParser)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,536] INFO StreamsConfig values: 
+[35mcontrol-center_1        |[0m 	application.id = _confluent-controlcenter-5-1-0-1-command
+[35mcontrol-center_1        |[0m 	application.server = 
+[35mcontrol-center_1        |[0m 	bootstrap.servers = [broker:9092]
+[33mbroker_1                |[0m + KAFKA_LOG_DIRS=/var/lib/kafka/data
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m # advertised.host, advertised.port, host and port are deprecated. Exit if these properties are set.
+[33mbroker_1                |[0m if [[ -n "${KAFKA_ADVERTISED_PORT-}" ]]
+[33mbroker_1                |[0m then
+[33mbroker_1                |[0m   echo "advertised.port is deprecated. Please use KAFKA_ADVERTISED_LISTENERS instead."
+[33mbroker_1                |[0m   exit 1
+[33mbroker_1                |[0m fi
+[33mbroker_1                |[0m + [[ -n '' ]]
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m if [[ -n "${KAFKA_ADVERTISED_HOST-}" ]]
+[33mbroker_1                |[0m then
+[33mbroker_1                |[0m   echo "advertised.host is deprecated. Please use KAFKA_ADVERTISED_LISTENERS instead."
+[33mbroker_1                |[0m   exit 1
+[33mbroker_1                |[0m fi
+[33mbroker_1                |[0m + [[ -n '' ]]
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m if [[ -n "${KAFKA_HOST-}" ]]
+[33mbroker_1                |[0m then
+[33mbroker_1                |[0m   echo "host is deprecated. Please use KAFKA_ADVERTISED_LISTENERS instead."
+[33mbroker_1                |[0m   exit 1
+[33mbroker_1                |[0m fi
+[33mbroker_1                |[0m + [[ -n '' ]]
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m if [[ -n "${KAFKA_PORT-}" ]]
+[33mbroker_1                |[0m then
+[33mbroker_1                |[0m   echo "port is deprecated. Please use KAFKA_ADVERTISED_LISTENERS instead."
+[33mbroker_1                |[0m   exit 1
+[33mbroker_1                |[0m fi
+[33mbroker_1                |[0m + [[ -n '' ]]
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m # Set if ADVERTISED_LISTENERS has SSL:// or SASL_SSL:// endpoints.
+[33mbroker_1                |[0m if [[ $KAFKA_ADVERTISED_LISTENERS == *"SSL://"* ]]
+[33mbroker_1                |[0m then
+[33mbroker_1                |[0m   echo "SSL is enabled."
+[33mbroker_1                |[0m 
+[33mbroker_1                |[0m   dub ensure KAFKA_SSL_KEYSTORE_FILENAME
+[33mbroker_1                |[0m   export KAFKA_SSL_KEYSTORE_LOCATION="/etc/kafka/secrets/$KAFKA_SSL_KEYSTORE_FILENAME"
+[33mbroker_1                |[0m   dub path "$KAFKA_SSL_KEYSTORE_LOCATION" exists
+[32mconnect_1               |[0m 	os.spec = Linux, amd64, 4.19.76-linuxkit
+[32mconnect_1               |[0m 	os.vcpus = 6
+[32mconnect_1               |[0m  (org.apache.kafka.connect.runtime.WorkerInfo)
+[32mconnect_1               |[0m [2020-11-06 05:28:06,966] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.ConnectDistributed)
+[32mconnect_1               |[0m [2020-11-06 05:28:07,052] INFO Loading plugin from: /usr/share/java/kafka-connect-elasticsearch (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:09,525] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/kafka-connect-elasticsearch/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:09,525] INFO Added plugin 'io.confluent.connect.elasticsearch.ElasticsearchSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:09,528] INFO Loading plugin from: /usr/share/java/kafka-connect-activemq (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:10,022] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/kafka-connect-activemq/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:10,022] INFO Added plugin 'io.confluent.connect.activemq.ActiveMQSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:10,022] INFO Added plugin 'io.confluent.connect.jms.JmsSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:10,023] INFO Loading plugin from: /usr/share/java/kafka-connect-jdbc (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:10,475] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/kafka-connect-jdbc/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:10,475] INFO Added plugin 'io.confluent.connect.jdbc.JdbcSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:10,475] INFO Added plugin 'io.confluent.connect.jdbc.JdbcSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:10,506] INFO Loading plugin from: /usr/share/java/kafka-connect-ibmmq (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:10,967] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/kafka-connect-ibmmq/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:10,967] INFO Added plugin 'io.confluent.connect.ibm.mq.IbmMQSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:10,968] INFO Loading plugin from: /usr/share/java/kafka-connect-hdfs (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:16,995] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/kafka-connect-hdfs/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:16,995] INFO Added plugin 'io.confluent.connect.storage.tools.SchemaSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:16,995] INFO Added plugin 'io.confluent.connect.hdfs.tools.SchemaSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:16,996] INFO Added plugin 'io.confluent.connect.hdfs.HdfsSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:16,996] INFO Added plugin 'io.confluent.connect.avro.AvroConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:16,996] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:17,080] INFO Loading plugin from: /usr/share/java/kafka-connect-jms (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:17,197] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/kafka-connect-jms/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:17,198] INFO Loading plugin from: /usr/share/java/kafka-connect-s3 (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:21,989] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/kafka-connect-s3/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:21,989] INFO Added plugin 'io.confluent.connect.s3.S3SinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:22,037] INFO Loading plugin from: /usr/share/java/kafka-connect-storage-common (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:25,718] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/kafka-connect-storage-common/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:25,776] INFO Loading plugin from: /usr/share/java/confluent-hub-client (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:26,224] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/confluent-hub-client/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:26,225] INFO Loading plugin from: /usr/share/java/confluent-rebalancer (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:27,067] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/confluent-rebalancer/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:27,067] INFO Loading plugin from: /usr/share/java/kafka-serde-tools (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:27,153] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/kafka-serde-tools/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[35mcontrol-center_1        |[0m 	buffered.records.per.partition = 1000
+[35mcontrol-center_1        |[0m 	cache.max.bytes.buffering = 0
+[35mcontrol-center_1        |[0m 	client.id = 
+[35mcontrol-center_1        |[0m 	commit.interval.ms = 30000
+[35mcontrol-center_1        |[0m 	connections.max.idle.ms = 540000
+[35mcontrol-center_1        |[0m 	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+[35mcontrol-center_1        |[0m 	default.key.serde = class org.apache.kafka.common.serialization.Serdes$ByteArraySerde
+[35mcontrol-center_1        |[0m 	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+[35mcontrol-center_1        |[0m 	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+[35mcontrol-center_1        |[0m 	default.value.serde = class org.apache.kafka.common.serialization.Serdes$ByteArraySerde
+[35mcontrol-center_1        |[0m 	max.task.idle.ms = 0
+[35mcontrol-center_1        |[0m 	metadata.max.age.ms = 300000
+[35mcontrol-center_1        |[0m 	metric.reporters = []
+[35mcontrol-center_1        |[0m 	metrics.num.samples = 2
+[35mcontrol-center_1        |[0m 	metrics.recording.level = INFO
+[35mcontrol-center_1        |[0m 	metrics.sample.window.ms = 30000
+[35mcontrol-center_1        |[0m 	num.standby.replicas = 0
+[35mcontrol-center_1        |[0m 	num.stream.threads = 1
+[35mcontrol-center_1        |[0m 	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+[35mcontrol-center_1        |[0m 	poll.ms = 100
+[35mcontrol-center_1        |[0m 	processing.guarantee = at_least_once
+[35mcontrol-center_1        |[0m 	receive.buffer.bytes = 32768
+[35mcontrol-center_1        |[0m 	reconnect.backoff.max.ms = 1000
+[35mcontrol-center_1        |[0m 	reconnect.backoff.ms = 50
+[35mcontrol-center_1        |[0m 	replication.factor = 1
+[35mcontrol-center_1        |[0m 	request.timeout.ms = 40000
+[35mcontrol-center_1        |[0m 	retries = 2147483647
+[35mcontrol-center_1        |[0m 	retry.backoff.ms = 100
+[35mcontrol-center_1        |[0m 	rocksdb.config.setter = null
+[35mcontrol-center_1        |[0m 	security.protocol = PLAINTEXT
+[35mcontrol-center_1        |[0m 	send.buffer.bytes = 131072
+[35mcontrol-center_1        |[0m 	state.cleanup.delay.ms = 600000
+[35mcontrol-center_1        |[0m 	state.dir = /var/lib/confluent-control-center/1/cp-command
+[35mcontrol-center_1        |[0m 	topology.optimization = all
+[35mcontrol-center_1        |[0m 	upgrade.from = null
+[35mcontrol-center_1        |[0m 	windowstore.changelog.additional.retention.ms = 86400000
+[35mcontrol-center_1        |[0m  (org.apache.kafka.streams.StreamsConfig)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,689] INFO AdminClientConfig values: 
+[35mcontrol-center_1        |[0m 	bootstrap.servers = [broker:9092]
+[35mcontrol-center_1        |[0m 	client.dns.lookup = default
+[35mcontrol-center_1        |[0m 	client.id = _confluent-controlcenter-5-1-0-1-command-ec7a07de-ece5-4dc1-b6b0-9f03fc03edd0-admin
+[35mcontrol-center_1        |[0m 	connections.max.idle.ms = 300000
+[35mcontrol-center_1        |[0m 	metadata.max.age.ms = 300000
+[35mcontrol-center_1        |[0m 	metric.reporters = []
+[35mcontrol-center_1        |[0m 	metrics.num.samples = 2
+[35mcontrol-center_1        |[0m 	metrics.recording.level = INFO
+[35mcontrol-center_1        |[0m 	metrics.sample.window.ms = 30000
+[35mcontrol-center_1        |[0m 	receive.buffer.bytes = 65536
+[35mcontrol-center_1        |[0m 	reconnect.backoff.max.ms = 1000
+[35mcontrol-center_1        |[0m 	reconnect.backoff.ms = 50
+[35mcontrol-center_1        |[0m 	request.timeout.ms = 120000
+[35mcontrol-center_1        |[0m 	retries = 2147483647
+[35mcontrol-center_1        |[0m 	retry.backoff.ms = 100
+[35mcontrol-center_1        |[0m 	sasl.client.callback.handler.class = null
+[35mcontrol-center_1        |[0m 	sasl.jaas.config = null
+[35mcontrol-center_1        |[0m 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+[35mcontrol-center_1        |[0m 	sasl.kerberos.min.time.before.relogin = 60000
+[35mcontrol-center_1        |[0m 	sasl.kerberos.service.name = null
+[35mcontrol-center_1        |[0m 	sasl.kerberos.ticket.renew.jitter = 0.05
+[35mcontrol-center_1        |[0m 	sasl.kerberos.ticket.renew.window.factor = 0.8
+[35mcontrol-center_1        |[0m 	sasl.login.callback.handler.class = null
+[35mcontrol-center_1        |[0m 	sasl.login.class = null
+[35mcontrol-center_1        |[0m 	sasl.login.refresh.buffer.seconds = 300
+[35mcontrol-center_1        |[0m 	sasl.login.refresh.min.period.seconds = 60
+[35mcontrol-center_1        |[0m 	sasl.login.refresh.window.factor = 0.8
+[35mcontrol-center_1        |[0m 	sasl.login.refresh.window.jitter = 0.05
+[35mcontrol-center_1        |[0m 	sasl.mechanism = GSSAPI
+[35mcontrol-center_1        |[0m 	security.protocol = PLAINTEXT
+[35mcontrol-center_1        |[0m 	send.buffer.bytes = 131072
+[35mcontrol-center_1        |[0m 	ssl.cipher.suites = null
+[35mcontrol-center_1        |[0m 	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+[35mcontrol-center_1        |[0m 	ssl.endpoint.identification.algorithm = https
+[35mcontrol-center_1        |[0m 	ssl.key.password = null
+[35mcontrol-center_1        |[0m 	ssl.keymanager.algorithm = SunX509
+[35mcontrol-center_1        |[0m 	ssl.keystore.location = null
+[35mcontrol-center_1        |[0m 	ssl.keystore.password = null
+[35mcontrol-center_1        |[0m 	ssl.keystore.type = JKS
+[35mcontrol-center_1        |[0m 	ssl.protocol = TLS
+[35mcontrol-center_1        |[0m 	ssl.provider = null
+[35mcontrol-center_1        |[0m 	ssl.secure.random.implementation = null
+[35mcontrol-center_1        |[0m 	ssl.trustmanager.algorithm = PKIX
+[35mcontrol-center_1        |[0m 	ssl.truststore.location = null
+[35mcontrol-center_1        |[0m 	ssl.truststore.password = null
+[35mcontrol-center_1        |[0m 	ssl.truststore.type = JKS
+[35mcontrol-center_1        |[0m  (org.apache.kafka.clients.admin.AdminClientConfig)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,729] INFO Kafka version : 2.1.0-cp1 (org.apache.kafka.common.utils.AppInfoParser)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,729] INFO Kafka commitId : bda8715f42a1a3db (org.apache.kafka.common.utils.AppInfoParser)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,756] INFO stream-thread [_confluent-controlcenter-5-1-0-1-command-ec7a07de-ece5-4dc1-b6b0-9f03fc03edd0-StreamThread-1] Creating restore consumer client (org.apache.kafka.streams.processor.internals.StreamThread)
+[35mcontrol-center_1        |[0m [2020-11-06 05:28:09,762] INFO ConsumerConfig values: 
+[35mcontrol-center_1        |[0m 	auto.commit.interval.ms = 5000
+[35mcontrol-center_1        |[0m 	auto.offset.reset = none
+[35mcontrol-center_1        |[0m 	bootstrap.servers = [broker:9092]
+[35mcontrol-center_1        |[0m 	check.crcs = true
+[35mcontrol-center_1        |[0m 	client.dns.lookup = default
+[35mcontrol-center_1        |[0m 	client.id = _confluent-controlcenter-5-1-0-1-command-ec7a07de-ece5-4dc1-b6b0-9f03fc03edd0-StreamThread-1-restore-consumer
+[35mcontrol-center_1        |[0m 	connections.max.idle.ms = 540000
+[35mcontrol-center_1        |[0m 	default.api.timeout.ms = 60000
+[35mcontrol-center_1        |[0m 	enable.auto.commit = false
+[35mcontrol-center_1        |[0m 	exclude.internal.topics = true
+[35mcontrol-center_1        |[0m 	fetch.max.bytes = 52428800
+[35mcontrol-center_1        |[0m 	fetch.max.wait.ms = 500
+[35mcontrol-center_1        |[0m 	fetch.min.bytes = 1
+[35mcontrol-center_1        |[0m 	group.id = 
+[35mcontrol-center_1        |[0m 	heartbeat.interval.ms = 3000
+[35mcontrol-center_1        |[0m 	interceptor.classes = []
+[35mcontrol-center_1        |[0m 	internal.leave.group.on.close = false
+[35mcontrol-center_1        |[0m 	isolation.level = read_uncommitted
+[35mcontrol-center_1        |[0m 	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+[35mcontrol-center_1        |[0m 	max.partition.fetch.bytes = 1048576
+[35mcontrol-center_1        |[0m 	max.poll.interval.ms = 2147483647
+[35mcontrol-center_1        |[0m 	max.poll.records = 1000
+[35mcontrol-center_1        |[0m 	metadata.max.age.ms = 300000
+[35mcontrol-center_1        |[0m 	metric.reporters = []
+[35mcontrol-center_1        |[0m 	metrics.num.samples = 2
+[35mcontrol-center_1        |[0m 	metrics.recording.level = INFO
+[35mcontrol-center_1        |[0m 	metrics.sample.window.ms = 30000
+[32mconnect_1               |[0m [2020-11-06 05:28:27,154] INFO Loading plugin from: /usr/share/java/kafka (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,344] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/kafka/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,345] INFO Added plugin 'org.apache.kafka.connect.tools.MockSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,345] INFO Added plugin 'org.apache.kafka.connect.tools.SchemaSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,345] INFO Added plugin 'org.apache.kafka.connect.tools.VerifiableSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,345] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,346] INFO Added plugin 'org.apache.kafka.connect.tools.MockSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,346] INFO Added plugin 'org.apache.kafka.connect.tools.MockConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,346] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,346] INFO Added plugin 'org.apache.kafka.connect.tools.VerifiableSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,347] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,347] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,347] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,347] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,347] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,348] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,348] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,348] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,348] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,349] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,349] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,349] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,349] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,350] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,350] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,350] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,350] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,351] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,351] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,351] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,351] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,351] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,352] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,352] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,352] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,352] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,353] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,353] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,353] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,353] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,354] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,354] INFO Loading plugin from: /usr/share/java/confluent-common (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,431] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/confluent-common/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:28,432] INFO Loading plugin from: /usr/share/java/schema-registry (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:29,012] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/schema-registry/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:29,012] INFO Loading plugin from: /usr/share/java/rest-utils (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:29,239] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/rest-utils/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:29,240] INFO Loading plugin from: /usr/share/java/monitoring-interceptors (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:29,408] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/monitoring-interceptors/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:29,408] INFO Loading plugin from: /usr/share/java/confluent-control-center (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:30,302] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/confluent-control-center/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:32,158] INFO Registered loader: sun.misc.Launcher$AppClassLoader@764c12b6 (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:32,160] INFO Added aliases 'ActiveMQSourceConnector' and 'ActiveMQSource' to plugin 'io.confluent.connect.activemq.ActiveMQSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:32,161] INFO Added aliases 'ElasticsearchSinkConnector' and 'ElasticsearchSink' to plugin 'io.confluent.connect.elasticsearch.ElasticsearchSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:32,161] INFO Added aliases 'HdfsSinkConnector' and 'HdfsSink' to plugin 'io.confluent.connect.hdfs.HdfsSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:32,161] INFO Added aliases 'IbmMQSourceConnector' and 'IbmMQSource' to plugin 'io.confluent.connect.ibm.mq.IbmMQSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:32,162] INFO Added aliases 'JdbcSinkConnector' and 'JdbcSink' to plugin 'io.confluent.connect.jdbc.JdbcSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:32,162] INFO Added aliases 'JdbcSourceConnector' and 'JdbcSource' to plugin 'io.confluent.connect.jdbc.JdbcSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)
+[32mconnect_1               |[0m [2020-11-06 05:28:32,162] INFO Added aliases 'JmsSourceConnector' and 'JmsSource' to plugin 'io.confluent.connect.jms.JmsSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader)

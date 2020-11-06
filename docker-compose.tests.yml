@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  test-kafka:
+    build:
+      context: .
+      dockerfile: Dockerfile-test
+      args:
+        - HTTPS_PROXY=$HTTPS_PROXY
+        - https_proxy=$HTTPS_PROXY
+      network: host
+    networks:
+      - siab
+    volumes:
+      - ./tests:/siab/tests
+
+networks:
+  siab:
+    external:
+      name: sophia-in-a-box_siab

@@ -1,0 +1,25 @@
+{
+    "name": "lts-sink-2",
+    "config": {
+        "connector.class": "io.confluent.connect.s3.S3SinkConnector",
+        "tasks.max": "1",
+        "topics.regex": "test",
+        "s3.region": "ap-southeast-2",
+        "s3.bucket.name": "test2",
+        "s3.part.size": "5242880",
+        "s3.proxy.url": "http://localstack:4572",
+        "internal.key.converter.schemas.enable": "false",
+        "internal.value.converter.schemas.enable": "false",
+        "internal.value.converter": "org.apache.kafkaConnect.json.JsonConverter",
+        "internal.key.converter": "org.apache.kafkaConnect.json.JsonConverter",
+        "flush.size": "3",
+        "rotate.schedule.interval.ms": "60000",
+        "storage.class": "io.confluent.connect.s3.storage.S3Storage",
+        "format.class": "io.confluent.connect.s3.format.avro.AvroFormat",
+        "schema.generator.class": "io.confluent.connect.storage.hive.schema.DefaultSchemaGenerator",
+        "partitioner.class": "io.confluent.connect.storage.partitioner.DefaultPartitioner",
+        "schema.compatibility": "NONE",
+        "timezone": "Australia/Melbourne",
+        "locale": "en-AU"
+    }
+}

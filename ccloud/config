@@ -1,0 +1,5 @@
+#Tue Oct 16 13:24:19 AEDT 2018
+ssl.endpoint.identification.algorithm=https
+sasl.mechanism=PLAIN
+bootstrap.servers=localhost\:9092
+retry.backoff.ms=500
